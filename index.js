@@ -18,7 +18,7 @@ function calculateSum(birthVal){
 
 function checkButtonHandler(){
 
-    if(birthDate.value && luckyNumber.value){
+    if(birthDate.value && luckyNumber.value>0){
         const sum= calculateSum(birthDate.value);
 
         if(sum%luckyNumber.value===0){
@@ -28,7 +28,7 @@ function checkButtonHandler(){
         }
 
     }else{
-        outputArea.innerHTML="Please enter right values in both the fields."
+        outputArea.innerHTML="Please enter valid inputs."
     }        
 
 }
